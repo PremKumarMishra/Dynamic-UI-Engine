@@ -1,0 +1,163 @@
+{
+        "window_title": "MPA Launcher",
+        "geometry": ["null", "null", 600, 400],
+        "icon" : "D:/Disk_D/vscode/Python/Projects/MPA SIRIUS/assets/computer.png",
+        "flags" : "Qt.WindowType.FramelessWindowHint",
+        "attribute" : "Qt.WidgetAttribute.WA_TranslucentBackground",
+        "stylesheet": "border-radius:10px;background:white;",
+        "layout": {
+            "type": "vertical",
+            "margin" : [0,0,0,0],
+            "widgets": [
+                {
+                    "id": "title_bar",
+                    "type": "frame",
+                    "height" : 30,
+                    "stylesheet": "background:cyan;border-bottom-left-radius:0px;border-bottom-right-radius:0px;",
+                    "font": {
+                        "family": "Arial",
+                        "size": 16,
+                        "bold": true,
+                        "italic": false
+                    },
+                    "layout" : {
+                        "type" : "horizontal",
+                        "margin" : [0,0,0,0],
+                        "spacing" : 7,
+                        "alignment" : "Qt.AlignRight",
+                        "widgets" : [
+                            {
+                                "id" : "title_icon",
+                                "type" : "label",
+                                "image" : "D:/Disk_D/vscode/Python/Projects/MPA SIRIUS/assets/computer.png",
+                                "img-width" : 20,
+                                "img-height" : 20
+                            },
+                            {
+                                "id" : "title_label",
+                                "type" : "label",
+                                "text" : "MPA Launcher 2.0",
+                                "stylesheet" : "color:black;",
+                                "font": {
+                                    "family": "Cascadia Mono",
+                                    "size": 10,
+                                    "bold": true,
+                                    "italic": false
+                                }
+                            },
+                            {
+                                "id" : "title_spacerItem",
+                                "type" : "spacerItem",
+                                "width" : 370,
+                                "hpolicy" : "expanding"
+                            },
+                            {
+                                "id" : "settings_bt",
+                                "type" : "button",
+                                "text" : "S",
+                                "width" : 30,
+                                "height" : 30,
+                                "stylesheet": "border-radius:0px;color:black;background:red;"
+
+                            },
+                            {
+                                "id" : "minimize_bt",
+                                "type" : "button",
+                                "text" : "-",
+                                "width" : 30,
+                                "height" : 30,
+                                "stylesheet": "border-radius:0px;color:black;background:red;"
+
+                            },
+                            {
+                                "id": "close_bt",
+                                "type": "button",
+                                "width" : 30,
+                                "height" : 30,
+                                "text" : "X",
+                                "stylesheet": "border-radius:0px;border-top-right-radius:5px;color:black;background:red;"
+                            }
+                        ]
+                        
+                    }
+                },
+                {
+                    "id": "input_lineedit",
+                    "type": "lineedit",
+                    "placeholder": "Enter your text here",
+                    "stylesheet": "font-size: 18px;",
+                    "enabled": true,
+                    "read_only": false
+                },
+                {
+                    "id": "options_combobox",
+                    "type": "combobox",
+                    "items": ["Option 1", "Option 2", "Option 3"],
+                    "visible" : true,
+                    "stylesheet": "font-size: 18px;",
+                    "enabled": true
+                },
+                {
+                    "id": "terms_checkbox",
+                    "type": "checkbox",
+                    "text": "Accept Terms",
+                    "stylesheet": "font-size: 18px;",
+                    "enabled": false
+                },
+                {
+                    "id": "option_a_radiobutton",
+                    "type": "radiobutton",
+                    "text": "Option A",
+                    "stylesheet": "font-size: 18px;",
+                    "enabled": true
+                },
+                {
+                    "type": "horizontal",
+                    "margin" : [3,3,3,3],
+                    "spacing" : 25,
+                    "widgets": [
+                        {
+                            "id": "page2_button",
+                            "type": "button",
+                            "text": "Go to Page 2",
+                            "function": "go_to_page_2",
+                            "stylesheet": "background-color: green; color: white;border-radius:5px;",
+                            "enabled": true
+                        },
+                        {
+                            "id": "page1_button",
+                            "type": "button",
+                            "text": "Go to Page 1",
+                            "function": "go_to_page_1",
+                            "stylesheet": "background-color: red; color: white;border-radius:5px;",
+                            "enabled": false
+                        },
+                        {
+                            "id" : "timer1",
+                            "type" : "timer",
+                            "singleshot" : false,
+                            "interval" : 2000,
+                            "function" : "printf"
+                        }
+                       
+                    ]
+                },
+                {
+                    "type" : "vertical",
+                    "widgets" : [
+                        {
+                            "id" : "frame1",
+                            "type" : "frame",
+                            "stylesheet" : "background:red;"
+                        },
+                        {
+                            "id" : "frame2",
+                            "type" : "frame",
+                            "stylesheet" : "background:yellow;",
+                            "enabled" : false
+                        }
+                    ]
+                }
+            ]
+        }
+    }

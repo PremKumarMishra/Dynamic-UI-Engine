@@ -1,0 +1,391 @@
+{
+    "window_title": "MPA Launcher",
+    "geometry": ["null", "null", 639, 421],
+    "icon" : "D:/Disk_E/Games/Launcher/pyscripts/Qt/MPA.ico",
+    "flags" : "FramelessWindowHint",
+    "attribute" : "WA_TranslucentBackground",
+    "stylesheet": "border-radius:10px;",
+    "layout": {
+        "type": "vertical",
+        "margin" : [0,0,0,0],
+        "spacing" : 0,
+        "widgets": [
+            {
+                "id": "title_bar",
+                "type": "frame",
+                "height" : 0,
+                "stylesheet": "background:white;border-bottom-left-radius:0px;border-bottom-right-radius:0px;",
+                "layout" : {
+                    "type" : "horizontal",
+                    "margin" : [0,0,0,0],
+                    "spacing" : 5,
+                    "alignment" : "Qt.AlignRight",
+                    "widgets" : [
+                        {
+                            "id" : "title_icon",
+                            "type" : "label",
+                            "image" : "D:/Disk_E/Games/Launcher/pyscripts/Qt/MPA.ico",
+                            "img-width" : 20,
+                            "img-height" : 20
+                        },
+                        {
+                            "id" : "title_label",
+                            "type" : "label",
+                            "text" : "MPA Launcher",
+                            "stylesheet" : "color:black;",
+                            "font": {
+                                "family": "Cascadia Mono",
+                                "size": 10,
+                                "bold": true,
+                                "italic": false
+                            }
+                        },
+                        {
+                            "id" : "title_spacerItem",
+                            "type" : "spacerItem",
+                            "hpolicy" : "expanding"
+                        },
+                        {
+                            "id" : "invite_bt",
+                            "type" : "button",
+                            "text" : "+",
+                            "width" : 30,
+                            "height" : 30,
+                            "stylesheet": "QPushButton{border-radius:0px;color:black;background:none;}QPushButton:hover{background:rgba(229,229,229,100);}"
+
+                        },
+                        {
+                            "id" : "settings_bt",
+                            "type" : "button",
+                            "text" : "S",
+                            "width" : 30,
+                            "height" : 30,
+                            "stylesheet": "QPushButton{border-radius:0px;color:black;background:none;}QPushButton:hover{background:rgba(229,229,229,100);}"
+
+                        },
+                        {
+                            "id" : "minimize_bt",
+                            "type" : "button",
+                            "text" : "-",
+                            "width" : 30,
+                            "height" : 30,
+                            "stylesheet": "QPushButton{border-radius:0px;color:black;background:none;}QPushButton:hover{background:rgba(229,229,229,100);}"
+
+                        },
+                        {
+                            "id": "close_bt",
+                            "type": "button",
+                            "width" : 30,
+                            "height" : 30,
+                            "text" : "X",
+                            "stylesheet": "QPushButton{border-radius:0px;border-top-right-radius:5px;color:black;background:none;}QPushButton:hover{background:#d61424;color:white;}"
+                        }
+                    ]
+                    
+                }
+            },
+            {
+                "id" : "image_frame",
+                "type" : "picture",
+                "width" : 639,
+                "height" : 390,
+                "image" : "C:/Users/Prem/Desktop/t/igin.png",
+
+                "layout" : {
+                    "type" : "vertical",
+                    "margin" : [20,20,20,20],
+                    "spacing" : 10,
+                    "alignment" : "Qt.AlignTop",
+                    "widgets" : [
+                        {
+                            "id" : "top_frame",
+                            "type" : "frame",
+                            "stylesheet" : "background:none;",
+                            "layout" : {
+                                "type" : "horizontal",
+                                "margin" : [0,0,0,0],
+                                "spacing" : 20,
+                                "alignment" : "Qt.AlignLeft",
+                                "widgets" : [
+                                     {
+                                        "type" : "spacerItem",
+                                        "hpolicy" : "fixed",
+                                        "vpolicy" : "fixed",
+                                        "width" : 45
+                                    },
+                                    {
+                                        "id" : "mode_frame",
+                                        "type" : "frame",
+                                        "layout" : 
+                                        {
+                                            "type" : "vertical",
+                                            "margin" : [0,0,0,0],
+                                            "spacing" : 5,
+                                            "alignment" : "Qt.AlignTop",
+                                            "widgets" : [
+                                                {
+                                                    "id" : "trash_label1",
+                                                    "type" : "label",
+                                                    "text" : "YOU ARE GOING TO JOIN",
+                                                    "alignment" : "Qt.AlignCenter",
+                                                    "stylesheet" : "color:gray;",
+                                                    "font": {
+                                                        "family": "Cascadia Mono",
+                                                        "size": 11,
+                                                        "bold": true,
+                                                        "italic": false
+                                                    }
+                                                },
+                                                {
+                                                    "id" : "mode_label",
+                                                    "type" : "label",
+                                                    "text" : "CUSTOM",
+                                                    "alignment" : "Qt.AlignCenter",
+                                                    "stylesheet" : "color:DodgerBlue;",
+                                                    "font": {
+                                                        "family": "Lovelo Line Bold",
+                                                        "size": 14,
+                                                        "bold": true,
+                                                        "italic": false
+                                                    }
+                                                },
+                                                {
+                                                    "id" : "mode_server",
+                                                    "type" : "label",
+                                                    "text" : "SERVER",
+                                                    "alignment" : "Qt.AlignCenter",
+                                                    "stylesheet" : "color:gray;",
+                                                    "font": {
+                                                        "family": "Cascadia Mono",
+                                                        "size": 11,
+                                                        "bold": true,
+                                                        "italic": false
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "id" : "mode_spacerItem",
+                                        "type" : "spacerItem",
+                                        "hpolicy" : "expanding",
+                                        "vpolicy" : "fixed"
+                                    },
+                                    {
+                                        "id" : "activePlayersFrame",
+                                        "type" : "frame",
+                                        "width" :  200,
+                                        "height" : 50,
+                                        "stylesheet" : "background:none;"
+                                    }
+                                ]
+                            }
+
+                        },
+                        {
+                            "id" : "mid_frame",
+                            "type" : "frame",
+                            "layout" : {
+                                "type" : "vertical",
+                                "margin" : [0,0,0,0],
+                                "spacing" : 0,
+                                "widgets" : [
+                                    {
+                                        "id" : "name_text",
+                                        "type" : "label",
+                                        "text" : "NAME",
+                                        "stylesheet" : "color:gray;font-family:'Century Gothic';font-weight:bold;font-size:14px;"
+                                    },
+                                    {
+                                        "id" : "playerName",
+                                        "type" : "lineedit",
+                                        "read_only" : true,
+                                        "width" : 291,
+                                        "height" : 25,
+                                        "alignment" : "Qt.AlignCenter|Qt.AlignCenter",
+                                        "text" : "STRANGER THINGS",
+                                        "stylesheet" : "QLineEdit{border:2px solid #1e90ff;border-radius:5px;background:rgba(34, 34, 34, 130);color:white;font-family:'Cascadia Mono';font-weight:bold;font-size:14px;}QLineEdit:hover{border:2px solid ghostwhite;}"
+
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type" : "spacerItem",
+                            "height" : 24,
+                            "hpolicy" : "fixed",
+                            "vpolicy" : "fixed"
+                        },
+                        {
+                            "id" : "bottomFrame",
+                            "type" : "frame",
+                            "layout" : {
+                                "type" : "horizontal",
+                                "margin" : [0,0,0,0],
+                                "spacing" : 20,
+                                "widgets" : [
+                                    {
+                                        "type" : "spacerItem",
+                                        "width" : 15,
+                                        "hpolicy" : "fixed",
+                                        "vpolicy" : "fixed"
+                                    },
+                                    {
+                                        "id" : "infoFrame",
+                                        "type" : "frame",
+                                        "layout" : {
+                                            "type" : "vertical",
+                                            "margin" : [0,0,0,0],
+                                            "spacing" : 10,
+                                            "widgets" : [
+                                                {
+                                                    "id" : "playerInfoText",
+                                                    "type" : "label",
+                                                    "text" : "<span style='color:DodgerBlue;'>Currently</span> <span style='color:white;'>Zero</span> <span style='color:DodgerBlue;'>Players Are Playing</span>",
+                                                    "stylesheet" : "color:DodgerBlue;font-family:'Century Gothic';font-size:16px;"
+                                                },
+                                                {
+                                                    "id" : "mapInfoText",
+                                                    "type" : "label",
+                                                    "text" : "<span style='color:DodgerBlue;'>Environment is of</span> <span style='color:white;'>Redstone</span>",
+                                                    "stylesheet" : "color:DodgerBlue;font-family:'Century Gothic';font-size:16px;"
+                                                },
+                                                {
+                                                    "id" : "pingTrashText",
+                                                    "type" : "label",
+                                                    "text" : "You Are Reaching To Server With",
+                                                    "stylesheet" : "color:DodgerBlue;font-family:'Century Gothic';font-size:16px;"
+                                                },
+                                                {
+                                                    "type" : "frame",
+                                                    "layout" : {
+                                                        "type" : "horizontal",
+                                                        "margin" : [0,0,0,0],
+                                                        "spacing" :0,
+                                                        "alignment" : "Qt.AlignCenter",
+                                                        "widgets" : [
+                                                            {
+                                                                "type" : "spacerItem",
+                                                                "hpolicy" : "fixed",
+                                                                "vpolicy" : "fixed",
+                                                                "width" : 100
+                                                                    
+                                                            },       
+                                                            {
+                                                                "id" : "pingInfoText",
+                                                                "type" : "label",
+                                                                "text" : "<span style='color:lawngreen;'>96</span> <span style='color:white;'>ping</span>",
+                                                                "alignment" : "Qt.AlignCenter",
+                                                                "stylesheet" : "color:DodgerBlue;font-family:'Century Gothic';font-size:14px;"
+                                                            },
+                                                            {
+                                                                "type" : "spacerItem",
+                                                                "hpolicy" : "expanding",
+                                                                "vpolicy" : "fixed"
+                                                                
+                                                            }       
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+
+                                    },
+                                    {
+                                        "id" : "bottomSpacer",
+                                        "type" : "spacerItem",
+                                        "hpolicy" : "expanding",
+                                        "vpolicy" : "fixed"
+                                    },
+                                    {
+                                        "id" : "buttonsFrame",
+                                        "type" : "frame",
+                                        "layout" : {
+                                            "type" : "vertical",
+                                            "margin" : [0,0,0,0],
+                                            "spacing" : 5,
+                                            "widgets" : [
+                                                {
+                                                    "id" : "chatboxBt",
+                                                    "type" : "button",
+                                                    "text" : "CHATBOX",
+                                                    "width" : 131,
+                                                    "height" : 32,
+                                                    "cursor" : "PointingHandCursor",
+                                                    "stylesheet" : "QPushButton{background:rgba(0, 0, 51, 130);font-family:'Century Gothic';font-weight:bold;color:white;border:2px solid #4a455a;border-radius:10px;}QPushButton:hover{border:2px solid ghostwhite;}"
+                                                },
+                                                {
+                                                    "id" : "aboutBt",
+                                                    "type" : "button",
+                                                    "text" : "ABOUT",
+                                                    "width" : 131,
+                                                    "height" : 32,
+                                                    "cursor" : "PointingHandCursor",
+                                                    "stylesheet" : "QPushButton{background:rgba(0, 0, 51, 130);font-family:'Century Gothic';font-weight:bold;color:white;border:2px solid #4a455a;border-radius:10px;}QPushButton:hover{border:2px solid ghostwhite;}"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type" : "spacerItem",
+                                        "width" : 40,
+                                        "hpolicy" : "fixed",
+                                        "vpolicy" : "fixed"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id" : "lastFrame",
+                            "type" : "frame",
+                            "layout" : {
+                                "type" : "horizontal",
+                                "margin" : [0,0,0,0],
+                                "spacing" : 20,
+                                "widgets" : [
+                                    {
+                                        "type" : "spacerItem",
+                                        "vpolicy" : "fixed",
+                                        "hpolicy" : "fixed",
+                                        "width" : 75
+                                    },
+                                    {
+                                        "id" : "joinButton",
+                                        "type" : "button",
+                                        "text" : "JOIN GAME",
+                                        "width" : 131,
+                                        "height" : 32,
+                                        "cursor" : "PointingHandCursor",
+                                        "stylesheet" : "QPushButton{background:rgba(0, 0, 51, 130);font-family:'Century Gothic';font-weight:bold;color:white;border:2px solid #4a455a;border-radius:10px;}QPushButton:hover{border:2px solid #1e90ff;}"
+                                    },
+                                    {
+                                        "type" : "spacerItem",
+                                        "vpolicy" : "fixed",
+                                        "hpolicy" : "expanding"
+                                    },
+                                    {
+                                        "id" : "musicBarFrame",
+                                        "type" : "frame",
+                                        "width" :  200,
+                                        "height" : 75
+                                    }
+                                ]
+                            }
+                        }
+
+                    ]
+                }
+
+            },
+            {
+                "id": "status_bar",
+                "type": "progressbar",
+                "alignment" : "Qt.AlignCenter",
+                "text" : "Server Online",
+                "value" : 100,
+                "stylesheet": "QProgressBar{background:#4a455a;border-top-left-radius:0px;border-top-right-radius:0px;font-family:'Century Gothic';font-size:13px;font-weight:bold;}QProgressBar::chunk{background: rgb(0, 191, 83);border-bottom-left-radius:8px;border-bottom-right-radius:8px;}"
+            }
+            
+        ]
+    }
+}

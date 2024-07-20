@@ -1,0 +1,188 @@
+{
+    "window_title" : "About Launcher",
+    "geometry" : ["null","null",405, 370],
+    "flags" : "WindowCloseButtonHint",
+    "stylesheet" : "font-family : 'Century Gothic';font-weight:bold;font-size:13px;",
+    "layout" : {
+        "type" : "vertical",
+        "margin" : [0,0,0,0],
+        "spacing" : 0,
+        "widgets" : [
+            {
+                "type" : "picture",
+                "image" : "C:/Users/Prem/Desktop/t/about_window.png",
+                "width" : 405,
+                "height" : 370,
+                "layout" : {
+                    "type" : "vertical",
+                    "margin" : [50,15,50,5],
+                    "spacing" :  7,
+                    "alignment" : "Qt.AlignTop",
+                    "widgets" : [
+                        {
+                            "type" : "label",
+                            "text" : "About Launcher",
+                            "alignment" : "Qt.AlignCenter",
+                            "stylesheet" : "text-decoration:underline;color:#1e90ff;font-family : 'Cascadia Mono';font-weight:bold;font-size:15px;",
+                            "animation" : {
+                                "type" : "color",
+                                "start_value" : ["#1e90ff"],
+                                "end_value" : ["white"],
+                                "duration" : 700,
+                                "trigger" : "hover",
+                                "property" : "color"
+
+                            }
+                        },
+                        {
+                            "type" : "spacerItem",
+                            "hpolicy" : "fixed",
+                            "vpolicy" : "fixed",
+                            "height" : 20
+                        },
+                        {
+                            "type" : "frame",
+                            "layout" : {
+                                "type" : "horizontal",
+                                "margin" : [0,0,0,0],
+                                "spacing" : 5,
+                                "alignment" : "Qt.AlignLeft",
+                                "widgets" : [
+                                    {
+                                        "type" : "label",
+                                        "image" : "C:/Users/Prem/Desktop/t/owner_pic.png"
+                                    },
+                                    {
+                                        "type" : "label",
+                                        "text" : "Server Owner : Azmat Khan",
+                                        "stylesheet" : "color:white;"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type" : "frame",
+                            "layout" : {
+                                "type" : "horizontal",
+                                "margin" : [0,0,0,0],
+                                "spacing" : 5,
+                                "alignment" : "Qt.AlignLeft",
+                                "widgets" : [
+                                    {
+                                        "type" : "label",
+                                        "image" : "C:/Users/Prem/Desktop/t/developer_pic.png"
+                                    },
+                                    {
+                                        "type" : "label",
+                                        "text" : "MPA Developers : Prem & Akash Kumar",
+                                        "stylesheet" : "color:white;"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type" : "frame",
+                            "layout" : {
+                                "type" : "horizontal",
+                                "margin" : [0,0,0,0],
+                                "spacing" : 5,
+                                "alignment" : "Qt.AlignLeft",
+                                "widgets" : [
+                                    {
+                                        "type" : "label",
+                                        "image" : "C:/Users/Prem/Desktop/t/theme_pic.png"
+                                    },
+                                    {
+                                        "type" : "label",
+                                        "text" : "Launcher Designer : Akash Kumar",
+                                        "stylesheet" : "color:white;"
+                                        
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type" : "frame",
+                            "layout" : {
+                                "type" : "horizontal",
+                                "margin" : [0,0,0,0],
+                                "spacing" : 5,
+                                "alignment" : "Qt.AlignLeft",
+                                "widgets" : [
+                                    {
+                                        "type" : "label",
+                                        "image" : "C:/Users/Prem/Desktop/t/mamager_pic.png"
+                                    },
+                                    {
+                                        "type" : "label",
+                                        "text" : "Map Modder : FeritCoderTR",
+                                        "stylesheet" : "color:white;"
+                                        
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type" : "frame",
+                            "layout" : {
+                                "type" : "horizontal",
+                                "margin" : [0,0,0,0],
+                                "spacing" : 5,
+                                "alignment" : "Qt.AlignLeft",
+                                "widgets" : [
+                                    {
+                                        "type" : "label",
+                                        "image" : "C:/Users/Prem/Desktop/t/discord_pic.png"
+                                    },
+                                    {
+                                        "type" : "label",
+                                        "text" : "Discord  :  <a href='https://discord.gg/RqDk7PmpxT'>IGI-2 MultiPlayer Alive Official</a>",
+                                        "open_external_links" : true,
+                                        "stylesheet" : "color:white;"
+                                        
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type" : "frame",
+                            "layout" : {
+                                "type" : "horizontal",
+                                "margin" : [0,0,0,0],
+                                "spacing" : 5,
+                                "alignment" : "Qt.AlignLeft",
+                                "widgets" : [
+                                    {
+                                        "type" : "label",
+                                        "image" : "C:/Users/Prem/Desktop/t/fb_pic.png"
+                                    },
+                                    {
+                                        "type" : "label",
+                                        "text" : "Facebook  :  <a href='https://m.facebook.com/groups/igi2.mpaofficial'>IGI-2 MultiPlayer Alive Official</a>",
+                                        "open_external_links" : true,
+                                        "stylesheet" : "color:white;"
+                                        
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type"  : "spacerItem",
+                            "hpolicy" : "fixed",
+                            "vpolicy" : "expanding"
+                        },
+                        {
+                            "type" : "label",
+                            "text" : "\u00a9\ufe0f  Copyrights 2024 MPA ALL RIGHTS RESERVED",
+                            "alignment" : "Qt.AlignCenter",
+                            "stylesheet" : "color:DodgerBlue;" 
+                        }
+
+
+                    ]
+                }
+
+            } 
+        ]
+    }
+}
